@@ -1,0 +1,56 @@
+.state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 56px 20px;
+    text-align: center;
+    gap: 6px;
+  }
+  
+  .icon {
+    font-size: 22px;
+    color: var(--color-text-muted);
+    margin-bottom: 6px;
+  }
+  
+  .iconError {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-danger-light);
+    color: var(--color-danger);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  
+  .title {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .message {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    max-width: 320px;
+  }
+  
+  .spinner {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    animation: spin 0.7s linear infinite;
+    margin-bottom: 6px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
