@@ -22,7 +22,7 @@ export async function getInventoryRows(): Promise<InventoryRow[]> {
     .from('inventory_items')
     .select('*, inventory(*)')
     .order('created_at', { ascending: false });
-    console.log(JSON.stringify(data, null, 2))
+    //console.log(JSON.stringify(data, null, 2))
 
   if (error) {
     throw new Error(`No se pudo cargar el inventario: ${error.message}`);
