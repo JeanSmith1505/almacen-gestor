@@ -10,6 +10,8 @@ InvenTrack permite administrar el catálogo de artículos de un almacén, su sto
 
 Todas las operaciones (crear, editar, eliminar, aprobar, rechazar) persisten realmente en Supabase — no hay datos mockeados ni `localStorage` como fuente de información.
 
+//Datos de prueba admin/user ---> xdeadpi123@gmail.com / xdeadpipi@gmail.com 
+//Password en ambos: 123456
 ---
 
 ## 2. Tecnologías utilizadas
