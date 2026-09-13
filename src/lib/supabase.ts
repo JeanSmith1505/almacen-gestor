@@ -1,15 +1,19 @@
-import { createClient } from '@supabase/supabase-js';
+import { createBrowserClient } from '@supabase/ssr';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
+if (!supabaseUrl) {
+  throw new Error('Falta NEXT_PUBLIC_SUPABASE_URL en las variables de entorno.');
+}
+
+if (!supabaseKey) {
   throw new Error(
-    'Faltan las variables de entorno NEXT_PUBLIC_SUPABASE_URL o NEXT_PUBLIC_SUPABASE_ANON_KEY. ' +
-      'Copia .env.local.example a .env.local y completa los valores de tu proyecto Supabase.'
+    'Falta NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY en las variables de entorno.'
   );
 }
 
-// Cliente único para todo el frontend. Usa exclusivamente la clave anon
-// (pública). La clave service_role NUNCA debe usarse en el navegador.
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createBrowserClient(
+  supabaseUrl,
+  supabaseKey
+);

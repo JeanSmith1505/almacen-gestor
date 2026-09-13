@@ -1,7 +1,7 @@
 'use client';
 
 import Modal from './Modal';
-import Button from './button';
+import Button from './Button';
 import styles from './ConfirmDialog.module.css';
 
 interface ConfirmDialogProps {

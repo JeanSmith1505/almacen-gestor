@@ -1,0 +1,41 @@
+/* app/(app)/dashboard/page.module.css */
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sectionTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0 0 12px;
+  }
+  
+  .kpiRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+  }
+  
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .column { min-width: 0; }
+  
+  .sectionTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 12px;
+  }
+  
+  @media (max-width: 900px) {
+    .kpiRow { grid-template-columns: repeat(2, 1fr); }
+    .columns { grid-template-columns: 1fr; }
+  }

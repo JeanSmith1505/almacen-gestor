@@ -1,53 +1,53 @@
 .overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(17, 19, 28, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    padding: 20px;
-  }
-  
-  .modal {
-    background: var(--color-surface);
-    border-radius: var(--radius-lg);
-    width: 100%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: var(--shadow-md);
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 22px;
-    border-bottom: 1px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    background: var(--color-surface);
-  }
-  
-  .title {
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .closeButton {
-    border: none;
-    background: transparent;
-    color: var(--color-text-muted);
-    font-size: 15px;
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: var(--radius-sm);
-  }
-  .closeButton:hover {
-    background: var(--color-neutral-light);
-    color: var(--color-text-primary);
-  }
-  
-  .body {
-    padding: 22px;
-  }
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 19, 28, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.modal {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-md);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.closeButton {
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+.closeButton:hover {
+  background: var(--color-neutral-light);
+  color: var(--color-text-primary);
+}
+
+.body {
+  padding: 22px;
+}

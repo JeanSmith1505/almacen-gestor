@@ -1,28 +1,68 @@
 .header {
-    height: var(--header-height);
-    display: flex;
-    align-items: center;
-    padding: 0 32px;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    position: sticky;
-    top: 0;
-    z-index: 5;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.roleTag {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.roleTagGuest {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: var(--color-neutral-light);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.signOutBtn {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+.signOutBtn:hover {
+  background: var(--color-neutral-light);
+  color: var(--color-text-primary);
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 12.5px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 16px;
   }
-  
-  .title {
-    font-size: 17px;
-    font-weight: 600;
-  }
-  
-  .subtitle {
-    font-size: 12.5px;
-    color: var(--color-text-secondary);
-    margin-top: 2px;
-  }
-  
-  @media (max-width: 1024px) {
-    .header {
-      padding: 0 16px;
-    }
-  }
+}

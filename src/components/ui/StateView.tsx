@@ -1,4 +1,4 @@
-import styles from './StateViews.module.css';
+import styles from './StateView.module.css';
 
 export function EmptyState({
   title = 'Sin resultados',

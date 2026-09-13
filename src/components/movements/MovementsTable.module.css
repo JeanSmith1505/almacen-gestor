@@ -1,0 +1,26 @@
+.typeTag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.entrada {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.salida {
+  background: var(--color-danger-light);
+  color: var(--color-danger);
+}
+
+.ajuste {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.noAction {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}

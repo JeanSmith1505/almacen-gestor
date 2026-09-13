@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import styles from '../../styles/Sidebar.module.css';
+import styles from '../../styles/SiderBar.module.css';
 
 const NAV_ITEMS = [
-  { href: '/', label: 'Dashboard', icon: '◱' },
+  { href: '/dashboard', label: 'Dashboard', icon: '◱' },
   { href: '/items', label: 'Artículos', icon: '▤' },
   { href: '/inventario', label: 'Inventario', icon: '⬒' },
   { href: '/movimientos', label: 'Movimientos', icon: '⇄' },

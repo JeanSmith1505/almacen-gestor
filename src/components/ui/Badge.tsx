@@ -7,6 +7,7 @@ const STOCK_STATUS_LABELS: Record<string, { label: string; tone: Tone }> = {
   STOCK_BAJO: { label: 'Stock bajo', tone: 'warning' },
   STOCK_NORMAL: { label: 'Stock normal', tone: 'success' },
   SOBRESTOCK: { label: 'Sobrestock', tone: 'primary' },
+  SIN_INVENTARIO: { label: 'Sin inventario', tone: 'neutral' },
 };
 
 const MOVEMENT_STATUS_LABELS: Record<string, { label: string; tone: Tone }> = {
